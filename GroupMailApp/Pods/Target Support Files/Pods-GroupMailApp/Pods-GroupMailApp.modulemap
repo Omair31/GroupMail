@@ -1,0 +1,6 @@
+framework module Pods_GroupMailApp {
+  umbrella header "Pods-GroupMailApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

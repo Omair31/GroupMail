@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A6B761C2A67D3F8005821CF /* LocalGroupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B761B2A67D3F8005821CF /* LocalGroupRepository.swift */; };
+		8A6B761E2A67D55C005821CF /* MailGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B761D2A67D55C005821CF /* MailGroup.swift */; };
+		8A6B76202A680537005821CF /* GroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B761F2A680537005821CF /* GroupsService.swift */; };
+		8A6B76222A68054C005821CF /* LocalGroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76212A68054C005821CF /* LocalGroupsService.swift */; };
+		8A6B76242A680567005821CF /* GroupListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76232A680567005821CF /* GroupListViewModel.swift */; };
+		8A6B76262A68058A005821CF /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76252A68058A005821CF /* GroupView.swift */; };
+		8A6B76282A6805C2005821CF /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76272A6805C2005821CF /* ToggleView.swift */; };
+		8A6B762A2A6805F2005821CF /* RecipientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76292A6805F2005821CF /* RecipientViewModel.swift */; };
+		8A6B762C2A68061E005821CF /* CreateGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B762B2A68061E005821CF /* CreateGroupViewModel.swift */; };
+		8A6B762E2A6806A6005821CF /* EditGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B762D2A6806A6005821CF /* EditGroupViewModel.swift */; };
+		8A6B76302A6806C7005821CF /* GroupTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B762F2A6806C7005821CF /* GroupTable.swift */; };
+		8A6B76322A6806E2005821CF /* GroupsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76312A6806E2005821CF /* GroupsRepository.swift */; };
+		8A6B76342A680704005821CF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76332A680704005821CF /* String+Extension.swift */; };
+		8A6B76362A680747005821CF /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76352A680747005821CF /* NextView.swift */; };
+		8A6B76382A68076D005821CF /* MailGroupsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76372A68076D005821CF /* MailGroupsViewFactory.swift */; };
+		8A6B763A2A680799005821CF /* NextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76392A680799005821CF /* NextViewModel.swift */; };
+		8A6B76432A68087E005821CF /* MailComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B76422A68087E005821CF /* MailComposeViewModel.swift */; };
+		8A6B764C2A680FBB005821CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B764B2A680FBB005821CF /* Constants.swift */; };
+		8A9462C22A66E6C60050F6D3 /* GroupMailAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9462C12A66E6C60050F6D3 /* GroupMailAppApp.swift */; };
+		8A9462C42A66E6C60050F6D3 /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9462C32A66E6C60050F6D3 /* GroupListView.swift */; };
+		8A9462C62A66E6C70050F6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A9462C52A66E6C70050F6D3 /* Assets.xcassets */; };
+		8A9462C92A66E6C70050F6D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A9462C82A66E6C70050F6D3 /* Preview Assets.xcassets */; };
+		8A9462D02A66F5F90050F6D3 /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9462CF2A66F5F90050F6D3 /* CreateGroupView.swift */; };
+		8A9462D22A66F6230050F6D3 /* EditGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9462D12A66F6230050F6D3 /* EditGroupView.swift */; };
+		8A9462D42A66F7DF0050F6D3 /* MailComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9462D32A66F7DF0050F6D3 /* MailComposeView.swift */; };
+		EED8BF8D303C0CCCCF56A1F5 /* Pods_GroupMailApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2DF39C9745C01913BF1562 /* Pods_GroupMailApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C876AA2B3E8B468F45D501F /* Pods-GroupMailApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupMailApp.release.xcconfig"; path = "Target Support Files/Pods-GroupMailApp/Pods-GroupMailApp.release.xcconfig"; sourceTree = "<group>"; };
+		6F2DF39C9745C01913BF1562 /* Pods_GroupMailApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupMailApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A6B761B2A67D3F8005821CF /* LocalGroupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGroupRepository.swift; sourceTree = "<group>"; };
+		8A6B761D2A67D55C005821CF /* MailGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailGroup.swift; sourceTree = "<group>"; };
+		8A6B761F2A680537005821CF /* GroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsService.swift; sourceTree = "<group>"; };
+		8A6B76212A68054C005821CF /* LocalGroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGroupsService.swift; sourceTree = "<group>"; };
+		8A6B76232A680567005821CF /* GroupListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewModel.swift; sourceTree = "<group>"; };
+		8A6B76252A68058A005821CF /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		8A6B76272A6805C2005821CF /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
+		8A6B76292A6805F2005821CF /* RecipientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientViewModel.swift; sourceTree = "<group>"; };
+		8A6B762B2A68061E005821CF /* CreateGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewModel.swift; sourceTree = "<group>"; };
+		8A6B762D2A6806A6005821CF /* EditGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroupViewModel.swift; sourceTree = "<group>"; };
+		8A6B762F2A6806C7005821CF /* GroupTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTable.swift; sourceTree = "<group>"; };
+		8A6B76312A6806E2005821CF /* GroupsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsRepository.swift; sourceTree = "<group>"; };
+		8A6B76332A680704005821CF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		8A6B76352A680747005821CF /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
+		8A6B76372A68076D005821CF /* MailGroupsViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailGroupsViewFactory.swift; sourceTree = "<group>"; };
+		8A6B76392A680799005821CF /* NextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewModel.swift; sourceTree = "<group>"; };
+		8A6B76422A68087E005821CF /* MailComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposeViewModel.swift; sourceTree = "<group>"; };
+		8A6B764B2A680FBB005821CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A9462BE2A66E6C60050F6D3 /* GroupMailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupMailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A9462C12A66E6C60050F6D3 /* GroupMailAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMailAppApp.swift; sourceTree = "<group>"; };
+		8A9462C32A66E6C60050F6D3 /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
+		8A9462C52A66E6C70050F6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A9462C82A66E6C70050F6D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A9462CF2A66F5F90050F6D3 /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
+		8A9462D12A66F6230050F6D3 /* EditGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroupView.swift; sourceTree = "<group>"; };
+		8A9462D32A66F7DF0050F6D3 /* MailComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposeView.swift; sourceTree = "<group>"; };
+		F224622190CC01FCCA7848F8 /* Pods-GroupMailApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupMailApp.debug.xcconfig"; path = "Target Support Files/Pods-GroupMailApp/Pods-GroupMailApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A9462BB2A66E6C60050F6D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED8BF8D303C0CCCCF56A1F5 /* Pods_GroupMailApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35CC062D43C53DFCE3435ED3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F224622190CC01FCCA7848F8 /* Pods-GroupMailApp.debug.xcconfig */,
+				5C876AA2B3E8B468F45D501F /* Pods-GroupMailApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3F64E8BFEB80FFD2FC149B5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F2DF39C9745C01913BF1562 /* Pods_GroupMailApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A6B763C2A6807F1005821CF /* GroupListView */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B761D2A67D55C005821CF /* MailGroup.swift */,
+				8A6B76252A68058A005821CF /* GroupView.swift */,
+				8A6B76232A680567005821CF /* GroupListViewModel.swift */,
+				8A9462C32A66E6C60050F6D3 /* GroupListView.swift */,
+			);
+			path = GroupListView;
+			sourceTree = "<group>";
+		};
+		8A6B763D2A6807FF005821CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B76212A68054C005821CF /* LocalGroupsService.swift */,
+				8A6B761F2A680537005821CF /* GroupsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A6B763F2A68082E005821CF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B76312A6806E2005821CF /* GroupsRepository.swift */,
+				8A6B761B2A67D3F8005821CF /* LocalGroupRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8A6B76402A680848005821CF /* EditGroupView */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B762D2A6806A6005821CF /* EditGroupViewModel.swift */,
+				8A9462D12A66F6230050F6D3 /* EditGroupView.swift */,
+			);
+			path = EditGroupView;
+			sourceTree = "<group>";
+		};
+		8A6B76412A68085B005821CF /* CreateGroupView */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B762B2A68061E005821CF /* CreateGroupViewModel.swift */,
+				8A9462CF2A66F5F90050F6D3 /* CreateGroupView.swift */,
+				8A6B76292A6805F2005821CF /* RecipientViewModel.swift */,
+				8A6B76272A6805C2005821CF /* ToggleView.swift */,
+			);
+			path = CreateGroupView;
+			sourceTree = "<group>";
+		};
+		8A6B76442A680894005821CF /* MailComposeView */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B76422A68087E005821CF /* MailComposeViewModel.swift */,
+				8A9462D32A66F7DF0050F6D3 /* MailComposeView.swift */,
+			);
+			path = MailComposeView;
+			sourceTree = "<group>";
+		};
+		8A6B76452A6808A3005821CF /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B76372A68076D005821CF /* MailGroupsViewFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		8A6B76462A6808C0005821CF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B762F2A6806C7005821CF /* GroupTable.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8A6B76472A6808CC005821CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B76332A680704005821CF /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8A6B76492A680909005821CF /* NextViewWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B76392A680799005821CF /* NextViewModel.swift */,
+				8A6B76352A680747005821CF /* NextView.swift */,
+			);
+			path = NextViewWrapper;
+			sourceTree = "<group>";
+		};
+		8A6B764A2A680FAF005821CF /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B764B2A680FBB005821CF /* Constants.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		8A9462B52A66E6C60050F6D3 = {
+			isa = PBXGroup;
+			children = (
+				8A9462C02A66E6C60050F6D3 /* GroupMailApp */,
+				8A9462BF2A66E6C60050F6D3 /* Products */,
+				35CC062D43C53DFCE3435ED3 /* Pods */,
+				3F64E8BFEB80FFD2FC149B5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A9462BF2A66E6C60050F6D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A9462BE2A66E6C60050F6D3 /* GroupMailApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A9462C02A66E6C60050F6D3 /* GroupMailApp */ = {
+			isa = PBXGroup;
+			children = (
+				8A9462C12A66E6C60050F6D3 /* GroupMailAppApp.swift */,
+				8A6B764A2A680FAF005821CF /* Strings */,
+				8A6B763C2A6807F1005821CF /* GroupListView */,
+				8A6B76412A68085B005821CF /* CreateGroupView */,
+				8A6B76402A680848005821CF /* EditGroupView */,
+				8A6B76442A680894005821CF /* MailComposeView */,
+				8A6B763F2A68082E005821CF /* Repositories */,
+				8A6B76452A6808A3005821CF /* Factory */,
+				8A6B763D2A6807FF005821CF /* Services */,
+				8A6B76462A6808C0005821CF /* Entity */,
+				8A6B76472A6808CC005821CF /* Extensions */,
+				8A6B76492A680909005821CF /* NextViewWrapper */,
+				8A9462C52A66E6C70050F6D3 /* Assets.xcassets */,
+				8A9462C72A66E6C70050F6D3 /* Preview Content */,
+			);
+			path = GroupMailApp;
+			sourceTree = "<group>";
+		};
+		8A9462C72A66E6C70050F6D3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A9462C82A66E6C70050F6D3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A9462BD2A66E6C60050F6D3 /* GroupMailApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A9462CC2A66E6C70050F6D3 /* Build configuration list for PBXNativeTarget "GroupMailApp" */;
+			buildPhases = (
+				5DB125C1BF4C6CA3C5C7845F /* [CP] Check Pods Manifest.lock */,
+				8A9462BA2A66E6C60050F6D3 /* Sources */,
+				8A9462BB2A66E6C60050F6D3 /* Frameworks */,
+				8A9462BC2A66E6C60050F6D3 /* Resources */,
+				9A4A101D0B8A6415EAE9EFFD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroupMailApp;
+			productName = GroupMailApp;
+			productReference = 8A9462BE2A66E6C60050F6D3 /* GroupMailApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A9462B62A66E6C60050F6D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8A9462BD2A66E6C60050F6D3 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A9462B92A66E6C60050F6D3 /* Build configuration list for PBXProject "GroupMailApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A9462B52A66E6C60050F6D3;
+			productRefGroup = 8A9462BF2A66E6C60050F6D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A9462BD2A66E6C60050F6D3 /* GroupMailApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A9462BC2A66E6C60050F6D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A9462C92A66E6C70050F6D3 /* Preview Assets.xcassets in Resources */,
+				8A9462C62A66E6C70050F6D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DB125C1BF4C6CA3C5C7845F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroupMailApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A4A101D0B8A6415EAE9EFFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GroupMailApp/Pods-GroupMailApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GroupMailApp/Pods-GroupMailApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GroupMailApp/Pods-GroupMailApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A9462BA2A66E6C60050F6D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A6B76302A6806C7005821CF /* GroupTable.swift in Sources */,
+				8A6B76282A6805C2005821CF /* ToggleView.swift in Sources */,
+				8A9462D22A66F6230050F6D3 /* EditGroupView.swift in Sources */,
+				8A6B761C2A67D3F8005821CF /* LocalGroupRepository.swift in Sources */,
+				8A9462C42A66E6C60050F6D3 /* GroupListView.swift in Sources */,
+				8A9462D02A66F5F90050F6D3 /* CreateGroupView.swift in Sources */,
+				8A6B764C2A680FBB005821CF /* Constants.swift in Sources */,
+				8A6B761E2A67D55C005821CF /* MailGroup.swift in Sources */,
+				8A6B76382A68076D005821CF /* MailGroupsViewFactory.swift in Sources */,
+				8A9462C22A66E6C60050F6D3 /* GroupMailAppApp.swift in Sources */,
+				8A6B762A2A6805F2005821CF /* RecipientViewModel.swift in Sources */,
+				8A6B76322A6806E2005821CF /* GroupsRepository.swift in Sources */,
+				8A6B76342A680704005821CF /* String+Extension.swift in Sources */,
+				8A6B76362A680747005821CF /* NextView.swift in Sources */,
+				8A9462D42A66F7DF0050F6D3 /* MailComposeView.swift in Sources */,
+				8A6B76432A68087E005821CF /* MailComposeViewModel.swift in Sources */,
+				8A6B762E2A6806A6005821CF /* EditGroupViewModel.swift in Sources */,
+				8A6B763A2A680799005821CF /* NextViewModel.swift in Sources */,
+				8A6B76222A68054C005821CF /* LocalGroupsService.swift in Sources */,
+				8A6B76242A680567005821CF /* GroupListViewModel.swift in Sources */,
+				8A6B76262A68058A005821CF /* GroupView.swift in Sources */,
+				8A6B762C2A68061E005821CF /* CreateGroupViewModel.swift in Sources */,
+				8A6B76202A680537005821CF /* GroupsService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A9462CA2A66E6C70050F6D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A9462CB2A66E6C70050F6D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A9462CD2A66E6C70050F6D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F224622190CC01FCCA7848F8 /* Pods-GroupMailApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GroupMailApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4V59AS94PE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xcode.GroupMailApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A9462CE2A66E6C70050F6D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C876AA2B3E8B468F45D501F /* Pods-GroupMailApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GroupMailApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4V59AS94PE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xcode.GroupMailApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A9462B92A66E6C60050F6D3 /* Build configuration list for PBXProject "GroupMailApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A9462CA2A66E6C70050F6D3 /* Debug */,
+				8A9462CB2A66E6C70050F6D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A9462CC2A66E6C70050F6D3 /* Build configuration list for PBXNativeTarget "GroupMailApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A9462CD2A66E6C70050F6D3 /* Debug */,
+				8A9462CE2A66E6C70050F6D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A9462B62A66E6C60050F6D3 /* Project object */;
+}
