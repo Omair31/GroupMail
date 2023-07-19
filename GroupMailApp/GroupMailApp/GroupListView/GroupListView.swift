@@ -19,19 +19,25 @@ struct GroupListView: View {
     }
     
     var body: some View {
-        List {
-            ForEach(viewModel.groups, id: \.id) { group in
-                Button {
-                    onMail?(group)
-                } label: {
-                    GroupView(group: group)
-                        .swipeActions {
-                            Button {
-                                onEdit?(group)
-                            } label: {
-                                Text(Constants.Localizable.edit)
-                            }
+        VStack {
+            if viewModel.groups.isEmpty {
+                Text(Constants.Localizable.noGroupsCreated)
+                    .frame(height: 100)
+            }
+            List {
+                ForEach(viewModel.groups, id: \.id) { group in
+                    Button {
+                        onMail?(group)
+                    } label: {
+                        GroupView(group: group)
+                            .swipeActions {
+                                Button {
+                                    onEdit?(group)
+                                } label: {
+                                    Text(Constants.Localizable.edit)
+                                }
                         }
+                    }
                 }
             }
         }

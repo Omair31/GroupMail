@@ -11,6 +11,7 @@ import Foundation
 enum Constants {
     struct Localizable {
         static let createGroup = "Create Group"
+        static let noGroupsCreated = "No groups created!"
         static let groups = "Groups"
         static let edit = "Edit"
         static let enterGroupName = "Enter group name"
