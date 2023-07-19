@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GroupsService {
-    func loadGroups() async -> [MailGroup]
+    func loadGroups(completion: ([MailGroup]) -> Void)
     func addGroup(_ group: MailGroup)
     func editGroup(_ group: MailGroup)
 }

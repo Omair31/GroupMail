@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0E82262A681C610087FAEE /* GroupMailAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E82252A681C610087FAEE /* GroupMailAppTests.swift */; };
 		8A6B761C2A67D3F8005821CF /* LocalGroupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B761B2A67D3F8005821CF /* LocalGroupRepository.swift */; };
 		8A6B761E2A67D55C005821CF /* MailGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B761D2A67D55C005821CF /* MailGroup.swift */; };
 		8A6B76202A680537005821CF /* GroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B761F2A680537005821CF /* GroupsService.swift */; };
@@ -35,9 +36,21 @@
 		EED8BF8D303C0CCCCF56A1F5 /* Pods_GroupMailApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2DF39C9745C01913BF1562 /* Pods_GroupMailApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8A0E82272A681C610087FAEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9462B62A66E6C60050F6D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A9462BD2A66E6C60050F6D3;
+			remoteInfo = GroupMailApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5C876AA2B3E8B468F45D501F /* Pods-GroupMailApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupMailApp.release.xcconfig"; path = "Target Support Files/Pods-GroupMailApp/Pods-GroupMailApp.release.xcconfig"; sourceTree = "<group>"; };
 		6F2DF39C9745C01913BF1562 /* Pods_GroupMailApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupMailApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0E82232A681C610087FAEE /* GroupMailAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupMailAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0E82252A681C610087FAEE /* GroupMailAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMailAppTests.swift; sourceTree = "<group>"; };
 		8A6B761B2A67D3F8005821CF /* LocalGroupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGroupRepository.swift; sourceTree = "<group>"; };
 		8A6B761D2A67D55C005821CF /* MailGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailGroup.swift; sourceTree = "<group>"; };
 		8A6B761F2A680537005821CF /* GroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsService.swift; sourceTree = "<group>"; };
@@ -68,6 +81,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8A0E82202A681C610087FAEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A9462BB2A66E6C60050F6D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,6 +114,14 @@
 				6F2DF39C9745C01913BF1562 /* Pods_GroupMailApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A0E82242A681C610087FAEE /* GroupMailAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A0E82252A681C610087FAEE /* GroupMailAppTests.swift */,
+			);
+			path = GroupMailAppTests;
 			sourceTree = "<group>";
 		};
 		8A6B763C2A6807F1005821CF /* GroupListView */ = {
@@ -199,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				8A9462C02A66E6C60050F6D3 /* GroupMailApp */,
+				8A0E82242A681C610087FAEE /* GroupMailAppTests */,
 				8A9462BF2A66E6C60050F6D3 /* Products */,
 				35CC062D43C53DFCE3435ED3 /* Pods */,
 				3F64E8BFEB80FFD2FC149B5D /* Frameworks */,
@@ -209,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				8A9462BE2A66E6C60050F6D3 /* GroupMailApp.app */,
+				8A0E82232A681C610087FAEE /* GroupMailAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,6 +275,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8A0E82222A681C610087FAEE /* GroupMailAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0E822B2A681C610087FAEE /* Build configuration list for PBXNativeTarget "GroupMailAppTests" */;
+			buildPhases = (
+				8A0E821F2A681C610087FAEE /* Sources */,
+				8A0E82202A681C610087FAEE /* Frameworks */,
+				8A0E82212A681C610087FAEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0E82282A681C610087FAEE /* PBXTargetDependency */,
+			);
+			name = GroupMailAppTests;
+			productName = GroupMailAppTests;
+			productReference = 8A0E82232A681C610087FAEE /* GroupMailAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8A9462BD2A66E6C60050F6D3 /* GroupMailApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A9462CC2A66E6C70050F6D3 /* Build configuration list for PBXNativeTarget "GroupMailApp" */;
@@ -274,6 +322,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					8A0E82222A681C610087FAEE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8A9462BD2A66E6C60050F6D3;
+					};
 					8A9462BD2A66E6C60050F6D3 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -293,11 +345,19 @@
 			projectRoot = "";
 			targets = (
 				8A9462BD2A66E6C60050F6D3 /* GroupMailApp */,
+				8A0E82222A681C610087FAEE /* GroupMailAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8A0E82212A681C610087FAEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A9462BC2A66E6C60050F6D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,6 +412,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8A0E821F2A681C610087FAEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0E82262A681C610087FAEE /* GroupMailAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A9462BA2A66E6C60050F6D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,7 +452,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8A0E82282A681C610087FAEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A9462BD2A66E6C60050F6D3 /* GroupMailApp */;
+			targetProxy = 8A0E82272A681C610087FAEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		8A0E82292A681C610087FAEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V59AS94PE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xcode.GroupMailAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupMailApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupMailApp";
+			};
+			name = Debug;
+		};
+		8A0E822A2A681C610087FAEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V59AS94PE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xcode.GroupMailAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupMailApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupMailApp";
+			};
+			name = Release;
+		};
 		8A9462CA2A66E6C70050F6D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -564,6 +676,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8A0E822B2A681C610087FAEE /* Build configuration list for PBXNativeTarget "GroupMailAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0E82292A681C610087FAEE /* Debug */,
+				8A0E822A2A681C610087FAEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8A9462B92A66E6C60050F6D3 /* Build configuration list for PBXProject "GroupMailApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -14,8 +14,8 @@ class LocalGroupsService: GroupsService {
         self.repository = repository
     }
     
-    func loadGroups() async -> [MailGroup] {
-        return repository.getGroups()
+    func loadGroups(completion: ([MailGroup]) -> Void) {
+        completion(repository.getGroups())
     }
     
     func addGroup(_ group: MailGroup) {

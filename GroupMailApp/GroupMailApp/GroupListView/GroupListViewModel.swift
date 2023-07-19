@@ -17,9 +17,8 @@ class GroupListViewModel: ObservableObject {
     }
     
     func getGroups() {
-        Task {
-            let groups = await groupService.loadGroups()
-            self.groups = groups
+        groupService.loadGroups { mailGroups in
+            self.groups = mailGroups
         }
     }
     
